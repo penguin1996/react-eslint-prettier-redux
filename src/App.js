@@ -1,11 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
+import Count from './asy-Redux/CustomerComponent'
 
 function App() {
   return (
-    <div className="App">
-      <p>hello, please import you component in App.js, then it will appear here</p>
+  <Provider store={store}>
+    <div className="App"> 
+        <CountComponent/>
+        <Component/>
     </div>
+    </Provider>
   );
 }
 
