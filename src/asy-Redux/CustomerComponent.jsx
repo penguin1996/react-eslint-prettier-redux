@@ -1,7 +1,7 @@
 import React from "./node_modules/react";
 import {connect} from "./node_modules/react-redux";
 import {bindActionCreators} from "./node_modules/redux";
-import {fetchPosts} from "./postActions";
+import {requestAndReceive} from "./RequestAndReceive";
 import {isEmpty} from "./node_modules/lodash";
 
 class CustomerComponent extends React.Component {
@@ -39,7 +39,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({fetchPosts}, dispatch);
+  return bindActionCreators({requestAndReceive}, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(CustomerComponent); 

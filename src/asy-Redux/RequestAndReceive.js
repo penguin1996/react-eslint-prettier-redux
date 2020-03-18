@@ -1,5 +1,5 @@
 import axios from "./node_modules/axios";
-import * as consetVriable from "./ConsetVriable";
+import * as consetVriable from "../ConsetVriable";
 
 function postRequest() {
   return {
